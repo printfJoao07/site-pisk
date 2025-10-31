@@ -1,0 +1,41 @@
+
+/*
+    Importação das fonts usadas no site
+    Padrões de texto usados no site: Títulos, textos breves e textos longos
+*/
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.title {
+    font-family: "Caprasimo", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.long-text {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Testes */
+nav.navbar {
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+
+main div div img {
+    width: auto;
+    height: 100vh;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 5;
+}
