@@ -4,6 +4,7 @@
  - como rolar 100vh de uma vez
  - como redirecionar para outra posição na mesma página
  - como ter arquivos (pdf, imagens) em um banco de dados
+ - como fazer um caminho geral para arquivos; acessar um arquivo mesmo em diferentes níveis de diretórios
 
  # Tarefas
  - carrossel grande no inicio do index

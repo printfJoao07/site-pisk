@@ -23,9 +23,20 @@
     <main>
         <div>
 
-            <div>
+            <div class="item-carrossel ativo">
                 <img src="images/bibliotecas_carroceo1.jpg" alt="Biblioteca">
             </div>
+
+            <div class="item-carrossel">
+                <img src="images/Laranja.jpeg" alt="Biblioteca">
+            </div>
+
+            <div class="item-carrossel">
+                <img src="images/logo_pisk.png" alt="Biblioteca">
+            </div>
+
+            <button id="voltar"><</button>
+            <button id="proximo">></button>
 
         </div>
     </main>
@@ -47,6 +58,7 @@
     <br><br><br><br><br><br>bzerrno
     <br><br>
 
+    <script src="js/carrossel.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
