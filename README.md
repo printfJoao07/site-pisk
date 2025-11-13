@@ -8,13 +8,12 @@
 
  # Tarefas
  - carrossel grande no inicio do index
- - carrosseis menores depois do grande (ultimos lançamentos, mais vendidos, ...)
+ - carrosseis menores depois do grande (ultimos lançamentos, bestselers, ...)
  - sobre a pisk
  - os fundadores
  - alguns autores de destaque
- - bestselers
- - mais informações sobre a pisk
  - livros de algum gênero especifico ou mais de um
+ - mais informações sobre a pisk
 
  - header
  - identificar se está logado ou não e mudar a interface a depender disso

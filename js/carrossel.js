@@ -1,37 +1,27 @@
-let carrossel = document.getElementsByClassName('item-carrossel')
-let cont = carrossel.length
+let proximo = document.querySelector('#proximo')
+let voltar = document.querySelector('#voltar')
+let cont = document.querySelectorAll('.item-carrossel').length
 let ativo = 0
 
-console.log(carrossel)
-
-document.getElementById('voltar').addEventListener(() => {
+voltar.onclick = () => {
     let exAtivo = document.querySelector('.ativo')
     
     exAtivo.classList.remove('ativo')
 
-    if(ativo < cont - 1){
-        ativo += 1
-    
-    }else{
-        ativo = 0
-    }
+    ativo = ativo <= 0? cont - 1 : ativo - 1
 
     carrossel[ativo].classList.add('ativo')
 
-})
+}
 
-document.getElementById('proximo').addEventListener(() => {
+proximo.onclick = () => {
     let exAtivo = document.querySelector('.ativo')
     
     exAtivo.classList.remove('ativo')
 
-    if(ativo > 0){
-        ativo -= 1
-    
-    }else{
-        ativo = cont - 1
-    }
+    ativo = ativo >= cont - 1? 0 : ativo + 1
+
 
     carrossel[ativo].classList.add('ativo')
 
-})
+}

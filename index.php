@@ -35,11 +35,13 @@
                 <img src="images/logo_pisk.png" alt="Biblioteca">
             </div>
 
-            <button id="voltar"><</button>
-            <button id="proximo">></button>
+            <button class="btn btn-outline-warning rounded-circle" id="voltar"><</button>
+            <button class="btn btn-outline-warning rounded-circle" id="proximo">></button>
 
         </div>
     </main>
+
+    
     
     <br><br><br><br>random_bytesrb
     random_bytesrbrhb

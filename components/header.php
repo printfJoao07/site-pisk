@@ -9,9 +9,8 @@
 
         <!-- Logo e nome da empresa como link para página inicial -->
         <div class="ps-xl-4 ps-lg-2 py-1 ">
-            <a href="../site-pisk/index.php" class="nav navbar-brand"
-            style="height: 50px">
-                <img src="../site-pisk/images/logo_pisk.png" alt="Logo Pisk" width="auto" height="95%" >
+            <a href="/site-pisk/index.php" class="nav navbar-brand" style="height: 60px">
+                <img src="/site-pisk/images/logo_pisk.png" alt="Logo Pisk" width="auto" height="100%" >
                 <h1 class="ms-xl-2 ms-lg-0 title">Pisk Editora</h1>
             </a>
         </div>
@@ -36,30 +35,30 @@
           <ul class="navbar-nav mb-3 mb-lg-1">
 
             <li class="nav-item">
-              <a href="../site-pisk/pages/minha_estante.php" class="nav-link">Minha Estante</a>
+              <a href="/site-pisk/pages/minha_estante.php" class="nav-link">Minha Estante</a>
             </li>
 
             <li class="nav-item">
-              <a href="../site-pisk/pages/catalogo.php" class="nav-link dropdown">Descobrir</a>
+              <a href="/site-pisk/pages/catalogo.php" class="nav-link dropdown">Descobrir</a>
             </li>
 
             <li class="nav-item">
-              <a href="../site-pisk/pages/autores.php" class="nav-link">Nossos Autores</a>
+              <a href="/site-pisk/pages/autores.php" class="nav-link">Nossos Autores</a>
             </li>
 
             <li class="nav-item">
-              <a href="../site-pisk/pages/seja_um_autor.php" class="nav-link">Seja um Autor!</a>
+              <a href="/site-pisk/pages/seja_um_autor.php" class="nav-link">Seja um Autor!</a>
             </li>
 
           </ul>
 
           <form class="d-flex me-xl-4 me-lg-2 ms-auto" role="search">
             <button class="btn btn-outline-warning me-2" type="button" >
-              <a href="../site-pisk/pages/login.php" class="nav-link">Entrar</a>
+              <a href="/site-pisk/pages/login.php" class="nav-link">Entrar</a>
             </button>
 
             <button class="btn btn-warning" type="buttom">
-              <a href="../site-pisk/pages/cadastro.php" class="nav-link">Cadasre-se</a>
+              <a href="/site-pisk/pages/cadastro.php" class="nav-link">Cadasre-se</a>
             </button>
           </form>
 
@@ -71,8 +70,8 @@
 <!-- <nav class="navbar navbar-expand-lg bg-violet" data-bs-theme="dark">
   <div class="container-fluid ">
 
-    <a class="navbar-brand w-25" href="../site-pisk/">
-      <img src="../site-pisk/images/logo-pisk.png" alt="Logo Pisk" class="img-fluid me-4 ms-4" style="width: 60px; height: 60px" />
+    <a class="navbar-brand w-25" href="/site-pisk/">
+      <img src="/site-pisk/images/logo-pisk.png" alt="Logo Pisk" class="img-fluid me-4 ms-4" style="width: 60px; height: 60px" />
       <span class="h1 text-golden">
         Pisk Editora
       </span>
@@ -107,17 +106,17 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="../site-pisk/pages/pagina-do-autor.php">Página do Autor</a>
+          <a class="nav-link" href="/site-pisk/pages/pagina-do-autor.php">Página do Autor</a>
         </li>
       </ul>
 
       <form class="d-flex me-4" role="search">
         <button class="btn btn-outline-warning me-2" type="button" >
-          <a href="../site-pisk/pages/login.php" class="nav-link">Entrar</a>
+          <a href="/site-pisk/pages/login.php" class="nav-link">Entrar</a>
         </button>
 
         <button class="btn btn-warning" type="nuttom">
-          <a href="../site-pisk/pages/cadastro.php" class="nav-link">Cadasre-se</a>
+          <a href="/site-pisk/pages/cadastro.php" class="nav-link">Cadasre-se</a>
         </button>
 
       </form>

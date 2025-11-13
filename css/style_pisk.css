@@ -58,24 +58,24 @@ main div div img {
     z-index: 5;
 }
 
-main div button {
+main div button.btn {
     position: absolute;
     top: 50%;
     border-radius: 50%;
     background-color: rgba(128, 128, 128, 0.767);
-    font-size: larger;
+    font-size: 24pt;
     color: white;
     display: block;
     z-index: 6;
     padding: auto;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 #voltar {
-    left: 10px;
+    left: 15px;
 }
 
 #proximo {
-    right: 10px;
+    right: 15px;
 }
