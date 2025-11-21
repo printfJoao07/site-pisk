@@ -17,19 +17,8 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-
-/* Testes */
-
-body {
+html, body {
     overflow-x: hidden;
-}
-
-.item-carrossel {
-    display: none;
-}
-
-.ativo {
-    display: block;
 }
 
 nav.navbar {
@@ -38,44 +27,7 @@ nav.navbar {
     left: 0;
 }
 
-main div div {
-    width: 100vw;
-    height: 100vh;
-}
+/* Testes */
 
-main div div img {
-    width: 100vw;
-    height: 100vh;
 
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 5;
-}
-
-main div button.btn {
-    position: absolute;
-    top: 50%;
-    border-radius: 50%;
-    background-color: rgba(128, 128, 128, 0.767);
-    font-size: 24pt;
-    color: white;
-    display: block;
-    z-index: 6;
-    padding: auto;
-    width: 50px;
-    height: 50px;
-}
-
-#voltar {
-    left: 15px;
-}
-
-#proximo {
-    right: 15px;
-}

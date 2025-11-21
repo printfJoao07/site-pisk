@@ -1,0 +1,185 @@
+/* Carrossel inicial */
+.item-carrossel {
+    display: none;
+}
+
+.ativo {
+    display: block;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 150px;
+}
+
+main div div img {
+    width: 100vw;
+    height: 100vh;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+main div button.btn {
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+
+    background-color: rgba(128, 128, 128, 0.767);
+    font-size: 24pt;
+    color: white;
+
+    display: block;
+    z-index: 6;
+
+    width: 50px;
+    height: 50px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#voltar {
+    left: 20px;
+}
+
+#proximo {
+    right: 20px;
+}
+
+
+/* Lista de livros */
+div.lista {
+    margin-top: 20px;
+}
+
+div.lista h3 a {
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+div.lista h3 a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+    transition: all 350ms;
+}
+
+div.list858a div.row {
+    width: 100%;
+}
+
+div.lista div.row div.col-12 {
+    padding: 5px 0;
+    margin-top: 15px;
+}
+
+div.lista div.row div.col-12 div {
+    display: grid;
+    place-items: center;
+    padding: auto;
+}
+
+div.lista div.row div.col-12 div img {
+    width: 150px;
+    height: 220px;
+    border: #000 solid 2px;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+
+div.lista div.row div.col-12 div:hover img {
+    width: 160px;
+    height: 230px;
+    transition: all 1s;
+}
+
+div.lista div.row div.col-12 div div {
+    width: 100%;
+    margin-top: 5px;
+    
+}
+
+div.lista div.row div.col-12 div div p.text {
+    font-size: larger;
+    margin-bottom: 0px;
+}
+
+div.lista div.row div.col-12 div div p.long-text {
+    font-size: large;
+    color: green
+}
+
+div.lista div.row div.col-12 div div a.btn {
+    color: #fff;
+    background-color: blueviolet;
+    padding: 7px;
+    transition: all 200ms;
+}
+
+div.lista div.row div.col-12 div div a.btn:hover {
+    background-color: rgb(114, 33, 190);
+    color: gold;
+    transition: all 350ms;
+}
+
+
+/* Anúncio */
+div.anuncio-container {
+    display: flex;
+    justify-content: center;
+}
+div.anuncio-container div.anuncio {
+    min-width: 300px;
+    max-width: 550px;
+    width: auto;
+    height: 550px;
+    margin: 25px 50px;
+    margin-bottom: 0;
+    background-color: blueviolet;
+    border: rgb(114, 33, 190) solid 2px;
+    border-radius: 15px;
+    transition: all 1s;
+}
+
+div.anuncio-container div.anuncio:hover {
+    min-width: 320px;
+    max-width: 570px;
+    transition: all 1s;
+}
+
+
+/* Informações sobre a Pisk */
+section.info {
+    width: 100vw;
+    height: 85vh;
+}
+section.info div.info {
+    margin: 30px;
+    background-color: #fff2afe0;
+    border: goldenrod solid 2px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+/* Fundadores */
+section.fundadores h2.title {
+    text-align: center;
+}
+
+section.fundadores div {
+    display: flex;
+    flex-direction: row;
+}
+
+section.fundadores div img.fundador {
+    width: 200px;
+    height: 200px;
+}

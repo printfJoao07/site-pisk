@@ -1,6 +1,7 @@
+let carrossel = document.querySelectorAll('.item-carrossel')
 let proximo = document.querySelector('#proximo')
 let voltar = document.querySelector('#voltar')
-let cont = document.querySelectorAll('.item-carrossel').length
+let cont = carrossel.length
 let ativo = 0
 
 voltar.onclick = () => {
