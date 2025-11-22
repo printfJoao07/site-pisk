@@ -13,6 +13,7 @@
 
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style_pisk.css">
 
 </head>
 <body>

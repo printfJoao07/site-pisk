@@ -7,9 +7,11 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=News+Cycle:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/style_pisk.css">
+
     <style>
         body {
-            background-image: url('/pisk/images/fundo.jpg');
+            background-image: url('../images/login_icons/fundo.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -42,7 +44,6 @@
             flex-wrap: wrap;
         }
         .logo-text {
-            font-family: 'News Cycle', sans-serif;
             font-weight: 700;
             font-size: 2rem;
             letter-spacing: 1px;
@@ -51,7 +52,6 @@
             margin-top: 0;
         }
         .subtitle {
-            font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             font-size: 1rem;
             opacity: 0.9;
@@ -91,7 +91,7 @@
             text-decoration: underline;
         }
         .header-logo {
-            display: block;
+            display: block;    
             box-sizing: border-box;
             width: 50px;
             height: 50px;
@@ -104,10 +104,10 @@
     <div class="container">
         <div class="login-box">
             <div class="login-header">
-                <img src="../images/logo-pisk.png" alt="Logo PISK Editora" class="header-logo" />
+                <img src="../images/logo_pisk.png" alt="Logo PISK Editora" class="header-logo" />
                 <div>
-                    <div class="logo-text">PISK EDITORA</div>
-                    <div class="subtitle">Entre na sua conta</div>
+                    <div class="logo-text title">PISK EDITORA</div>
+                    <div class="subtitle text">Entre na sua conta</div>
                 </div>
             </div>
             <div class="login-body">
@@ -116,7 +116,7 @@
                         <label for="email" class="form-label">E-mail</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text input-icon">
-                                <img src="../images/icon1.jpg" alt="Ícone de E-mail" style="width: 2rem; height: 2rem;" />
+                                <img src="../images/login_icons/email_icon1.jpg" alt="Ícone de E-mail" style="width: 2rem; height: 2rem;" />
                             </span>
                             <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" required />
                         </div>
@@ -125,7 +125,7 @@
                         <label for="password" class="form-label">Senha</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text input-icon">
-                                <img src="../images/icon2.png" alt="Ícone de Senha" style="width: 2rem; height: 2rem;" />
+                                <img src="../images/login_icons/password_icon.png" alt="Ícone de Senha" style="width: 2rem; height: 2rem;" />
                             </span>
                             <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required />
                         </div>
@@ -136,8 +136,8 @@
                     </div>
                     <button type="submit" class="btn btn-login w-100 mb-3">ENTRE NA SUA CONTA</button>
                     <div class="footer-links text-center">
-                        <a>Esqueceu a senha?</a>
-                        <a href="cadastro.php">Criar conta</a>
+                        <a>Não tem uma conta?</a>
+                        <a href="cadastro.php">Crie uma aqui</a>
                     </div>
                 </form>
             </div>

@@ -12,8 +12,8 @@
  - sobre a pisk
  - os fundadores
  - alguns autores de destaque
- - livros de algum gênero especifico ou mais de um
  - mais informações sobre a pisk
+ - livros de algum gênero especifico ou mais de um
 
  - header
  - identificar se está logado ou não e mudar a interface a depender disso

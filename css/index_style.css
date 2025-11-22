@@ -169,17 +169,46 @@ section.info div.info {
     height: 100%;
 }
 
+
 /* Fundadores */
 section.fundadores h2.title {
     text-align: center;
 }
 
 section.fundadores div {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    place-items: center;
+    margin: 15px auto;
 }
 
 section.fundadores div img.fundador {
     width: 200px;
     height: 200px;
+    border: rgb(88, 0, 88) groove 5px;
+    border-radius: 50px;
+}
+
+section.fundadores div p.text {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+/* Autores de destaque */
+section.autores div {
+    display: grid;
+    place-items: center;
+    margin: 15px auto;
+}
+
+section.autores div img.autor {
+    width: 200px;
+    height: 200px;
+    border: rgba(88, 0, 88, 0.9) double 5px;
+    border-radius: 50%;
+}
+
+section.autores div p.text {
+    font-size: larger;
+    font-weight: bold;
 }
