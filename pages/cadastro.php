@@ -1,3 +1,9 @@
+<?php
+    if(session_status() === PHP_SESSION_NONE){
+        session_start();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -70,7 +76,6 @@
             color: #343a40;
             font-weight: 600;
             padding: 12px;
-            font-family: 'Montserrat', sans-serif;
         }
         .btn-login:hover {
             opacity: 0.9;
@@ -99,6 +104,9 @@
     </style>
 </head>
 <body>
+
+    <?php include '../components/mensagem.php'; ?>
+    
     <div class="container">
         <div class="login-box">
             <div class="login-header">
@@ -109,7 +117,7 @@
                 </div>
             </div>
             <div class="login-body">
-                <form action="/pisk/database/cadastra-usuario.php" method="POST" novalidate>
+                <form action="/pisk/database/funcoes_usuario.php" method="POST" novalidate>
                     <div class="mb-3">
                         <label for="username" class="form-label">Nome de Usuário</label>
                         <div class="input-group mb-3">
@@ -146,7 +154,7 @@
                             <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="••••••••" required />
                         </div>
                     </div>
-                    <button type="submit" name="cria-usuario" class="btn btn-login w-100 mb-3">CADASTRAR-SE</button>
+                    <button type="submit" name="cria-usuario" class="btn btn-login w-100 mb-3 text">CADASTRAR-SE</button>
                     <div class="footer-links text-center">
                         <div>Já tem uma conta? <a href="login.php" class="ms-1">Faça login</a></div>
                     </div>

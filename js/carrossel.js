@@ -26,3 +26,34 @@ proximo.onclick = () => {
     carrossel[ativo].classList.add('ativo')
 
 }
+
+const myObserver = new IntersectionObserver( (entries) => {
+    entries.forEach((entry) => {
+        let lastScrollTop = 0
+        let wHeight = window.innerHeight
+
+        console.log(entry.isIntersecting)
+
+        if (entry.isIntersecting){
+            window.addEventListener('scroll', () => {
+                let st = document.documentElement.scrollTop
+
+                if(st > lastScrollTop){
+                    window.scrollTo(0, wHeight + 10)
+                    console.log(entry.isIntersecting)
+
+                }else{
+                    window.scrollTo(0, - (st))
+                    console.log(entry.isIntersecting)
+
+                }
+
+                lastScrollTop = st
+            })
+        }
+    })
+})
+
+const carrosselBody = document.querySelector('#carrossel')
+
+myObserver.observe(carrosselBody)

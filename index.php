@@ -24,7 +24,7 @@
     <?php require "components/header.php"; ?>
 
     <!-- Carrossel inicial da página -->
-    <main>
+    <main id="carrossel">
         <div>
 
             <div class="item-carrossel ativo">
@@ -245,13 +245,6 @@
     <!-- Livros de algun(s) gênero(s) específico(s) -->
     <section class="row">
 
-        <!-- Pequeno anúncio sobre a Pisk -->
-        <div class="col-xl-4 col-lg-12 anuncio-container">
-            <div class="anuncio">
-                
-            </div>
-        </div>
-
         <div class="col-xl-8 col-lg-12 px-5">
 
             <!-- Gênero 1 -->
@@ -356,6 +349,13 @@
 
             </div>
 
+        </div>
+
+        <!-- Pequeno anúncio sobre a Pisk -->
+        <div class="col-xl-4 col-lg-12 anuncio-container">
+            <div class="anuncio">
+                
+            </div>
         </div>
 
     </section>

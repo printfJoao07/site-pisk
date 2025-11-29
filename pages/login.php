@@ -1,3 +1,9 @@
+<?php
+    if(session_status() === PHP_SESSION_NONE){
+        session_start();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -72,7 +78,6 @@
             color: #343a40;
             font-weight: 600;
             padding: 12px;
-            font-family: 'Montserrat', sans-serif;
         }
         .btn-login:hover {
             opacity: 0.9;
@@ -102,6 +107,9 @@
 </head>
 <body>
     <div class="container">
+
+        <?php include '../components/mensagem.php'; ?>
+
         <div class="login-box">
             <div class="login-header">
                 <img src="../images/logo_pisk.png" alt="Logo PISK Editora" class="header-logo" />
@@ -134,7 +142,7 @@
                         <input type="checkbox" class="form-check-input" id="remember" name="remember" />
                         <label class="form-check-label" for="remember">Lembrar de mim</label>
                     </div>
-                    <button type="submit" class="btn btn-login w-100 mb-3">ENTRE NA SUA CONTA</button>
+                    <button type="submit" name="logar" class="btn btn-login w-100 mb-3 text">ENTRE NA SUA CONTA</button>
                     <div class="footer-links text-center">
                         <a>Não tem uma conta?</a>
                         <a href="cadastro.php">Crie uma aqui</a>
