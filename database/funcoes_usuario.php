@@ -1,26 +1,30 @@
 <?php
+    ob_start();
+
     if(session_status() === PHP_SESSION_NONE){
         session_start();
     }
 
-    require 'conexao.php';
-    require 'usuarioDAO.php';
+    require_once 'conexao.php';
+    require_once 'usuarioDAO.php';
 
 
 
-    if (isset($_POST['cria-usuario'])){
+    if (isset($_POST['cria_usuario'])){
 
-        $nome = mysqli_real_escape_string($conexao, $_POST['username']);
-        $email = mysqli_real_escape_string($conexao, $_POST['email']);
-        $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
-        $confirmaSenha = mysqli_real_escape_string($conexao, $_POST['confirmPassword']);
-        $funcao = isset($_POST['funcao'])? mysqli_real_escape_string($conexao, $_POST['funcao']) : null;
+        $nome = mysqli_real_escape_string($conexao, trim($_POST['username']));
+        $email = mysqli_real_escape_string($conexao, trim($_POST['email']));
+        $senha = mysqli_real_escape_string($conexao, trim($_POST['senha']));
+        $confirmaSenha = mysqli_real_escape_string($conexao, trim($_POST['confirmPassword']));
+        $funcao = isset($_POST['funcao'])? mysqli_real_escape_string($conexao, trim($_POST['funcao'])) : null;
 
-        if ($senha === $confirmaSenha){
+        if ($senha == $confirmaSenha){
+            $senha = mysqli_real_escape_string($conexao, password_hash(trim($_POST['senha'])));
             if (cadastraUsuario($conexao, $nome, $email, $senha, $funcao)){
                 $_SESSION['mensagem'] = "Conta criada com sucesso!";
                 header("Location: http://localhost/site-pisk/pages/minha_estante.php");
                 exit;
+                return null;
 
             }
 
@@ -38,8 +42,8 @@
 
     if (isset($_POST['logar'])){
 
-        $email = mysqli_real_escape_string($conexao, $_POST['email']);
-        $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
+        $email = mysqli_real_escape_string($conexao, trim($_POST['email']));
+        $senha = mysqli_real_escape_string($conexao, trim($_POST['senha']));
 
         $usuario = logarUsuario($conexao, $email);
 

@@ -14,10 +14,10 @@
             mysqli_stmt_bind_param($stmtConfere, "s", $email);
             mysqli_stmt_execute($stmtConfere);
 
-            $resultadoConfere = mysqli_stmt_get_result(stmtConfere);
+            $resultadoConfere = mysqli_stmt_get_result($stmtConfere);
 
             if ($resultadoConfere && mysqli_num_rows($resultadoConfere) > 0){
-                $_SESSION['mensagem'] = "Email já cadastrado! Tente novamente com outro.";
+                $_SESSION['mensagem'] = "Email já cadastrado! Tente novamente com outro email.";
                 mysqli_stmt_close($stmtConfere);
                 return false;
 
@@ -27,13 +27,12 @@
 
         }
 
-
         // Incerção do usuário
         $sql = "INSERT INTO usuario (nome, email, senha, funcao) VALUES (?, ?, ?, ?)";
         $stmt = mysqli_prepare($conexao, $sql);
 
         if ($stmt){
-            mysqli_stmt_bind_param($stmt, "ssss", $nome, $email, password_hash($senha, PASSWORD_DEFAULT), $funcao);
+            mysqli_stmt_bind_param($stmt, "ssss", $nome, $email, $senha, $funcao);
             return mysqli_stmt_execute($stmt);
 
         }
@@ -42,6 +41,7 @@
         return false;
 
     }
+
 
 
     // Login do usuário

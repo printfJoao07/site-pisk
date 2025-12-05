@@ -154,7 +154,7 @@
                             <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="••••••••" required />
                         </div>
                     </div>
-                    <button type="submit" name="cria-usuario" class="btn btn-login w-100 mb-3 text">CADASTRAR-SE</button>
+                    <button type="submit" name="cria_usuario" class="btn btn-login w-100 mb-3 text">CADASTRAR-SE</button>
                     <div class="footer-links text-center">
                         <div>Já tem uma conta? <a href="login.php" class="ms-1">Faça login</a></div>
                     </div>

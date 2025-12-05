@@ -27,20 +27,34 @@
     <main id="carrossel">
         <div>
 
-            <div class="item-carrossel ativo">
-                <img src="images/bibliotecas_carroceo1.jpg" alt="Biblioteca">
+            <div id="item-carr-1" class="item-carrossel ativo " >
+                
+                <div class="subitem">
+                    <div>
+                        <img src="images/logo_pisk.png" alt="Logo da pisk" class="logo-carrossel" />
+                    </div>
+                    <h1 class="title">Bem vindo à Pisk</h1>
+                </div>
             </div>
 
-            <div class="item-carrossel">
-                <img src="images/Laranja.jpeg" alt="Biblioteca">
+            <div id="item-carr-2" class="item-carrossel">
+                <div class="subitem">
+                    <div>
+                        <h1 class="title"><span>P</span>ena</h1>
+                        <p class="long-text">Voltando a literatura classica, assim como sua forma de escrita.</p>
+                    </div>
+
+                    <img src="images/index_carrossel/mesa_tinteiro.jpeg" alt="Mesa com tinteiro">
+                </div>
+
             </div>
 
-            <div class="item-carrossel">
+            <div id="item-carr-3" class="item-carrossel">
                 <img src="images/logo_pisk.png" alt="Biblioteca">
             </div>
 
-            <button class="btn btn-outline-warning rounded-circle " id="voltar"><span>←</span></button>
-            <button class="btn btn-outline-warning rounded-circle " id="proximo"><span>→</span></button>
+            <button class="btn " id="voltar"><span>←</span></button>
+            <button class="btn " id="proximo"><span>→</span></button>
 
         </div>
     </main>

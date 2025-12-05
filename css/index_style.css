@@ -11,34 +11,188 @@ main {
     width: 100vw;
     height: 100vh;
     margin-bottom: 150px;
+    scroll-snap-type: y mandatory;
 }
 
-main div div img {
-    width: 100vw;
+main div {
+    scroll-snap-align: start;
+}
+
+
+
+/* Itens do carrossel */
+@keyframes toUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes toDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes toLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes toRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* item 1 */
+main div div#item-carr-1.ativo {
+    width: 100%;
     height: 100vh;
-
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 5;
+    background-image: url("../images/index_carrossel/bibliotecas_carroceo1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
 }
+
+main div div#item-carr-1.ativo div.subitem {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 7;
+    display: flex;
+    margin-top: 60px;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: #fff2afd0;
+    border: goldenrod solid 2px;
+}
+
+main div div#item-carr-1.ativo div.subitem h1.title {
+    font-size: 42pt;
+    text-align: center;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    animation: toLeft 0.5s ease-in-out 1;
+
+}
+
+main div div#item-carr-1.ativo div.subitem div {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(138, 43, 226, 0.350);
+    border: rgb(114, 33, 190, 0.5) solid 2px;
+    border-radius: 50px;
+    padding: 25px;
+    margin-top: 35px;
+    animation: toUp 0.5s ease-in-out 1;
+}
+
+main div div#item-carr-1.ativo div.subitem div img {
+    width: 200px;
+    height: 200px;
+    animation: toUp 0.7s ease-in-out 1;
+}
+
+
+/* Resolução para telas pequenas */
+@media screen and (max-width: 576px) {
+
+    /* Item 1 do carrossel */
+    main div div#item-carr-1.ativo div.subitem {
+        display: grid !important;
+        place-items: center;
+        padding-bottom: 20px;
+    }
+
+    main div div#item-carr-1.ativo div.subitem h1.title {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+/* Resolucão para telas médias */
+@media screen and (max-width: 768px) {
+
+    /* Item 1 do carrossel */
+    main div div#item-carr-1.ativo div.subitem {
+        margin-left: 0;
+    }
+
+    main div div#item-carr-1.ativo div.subitem h1.title {
+        margin-top: 50px;
+    }
+    
+}
+
+
+
+
+/* item 2 */
+main div div#item-carr-2.ativo div.subitem {
+    background-color: blueviolet;
+    padding: 100px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+    height: 100vh;
+}
+
+main div div#item-carr-2.ativo div.subitem div {
+    display: grid;
+    place-items: left;
+    position: relative;
+}
+
+main div div#item-carr-2.ativo div.subitem div h1.title {
+    font-size: 42pt;
+    height: 25%;
+}
+
+main div div#item-carr-2.ativo div.subitem div h1.title span {
+    color: goldenrod;
+}
+
+main div div#item-carr-2.ativo div.subitem div p {
+    font-size: xx-large;
+}
+
+main div div#item-carr-2.ativo div.subitem img {
+    height: 350px;
+    width: auto;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
 
 main div button.btn {
     position: absolute;
-    top: 50%;
+    top: 45%;
     border-radius: 50%;
 
-    background-color: rgba(128, 128, 128, 0.767);
-    font-size: 24pt;
+    /* background-color: rgba(128, 128, 128, 0.767); */
+    font-size: 32pt;
     color: white;
 
     display: block;
-    z-index: 6;
+    z-index: 7;
 
     width: 50px;
     height: 50px;
@@ -47,8 +201,12 @@ main div button.btn {
     align-items: center;
 }
 
+main div button.btn:hover {
+    color: blueviolet;
+}
+
 #voltar {
-    left: 20px;
+    left: 12px;
 }
 
 #proximo {
