@@ -1,22 +1,22 @@
 # Duvidas para tirar com Janaina
  - como fazer dropdown com hover e animação
  - sublinhado nos links do header com memória e como tirar a opacidade dele
- - como rolar 100vh de uma vez
- - como redirecionar para outra posição na mesma página
+ - como rolar 100vh de uma vez ✅
+ - como redirecionar para outra posição na mesma página ✅
  - como ter arquivos (pdf, imagens) em um banco de dados
- - como fazer um caminho geral para arquivos; acessar um arquivo mesmo em diferentes níveis de diretórios
+ - como fazer um caminho geral para arquivos; acessar um arquivo mesmo em diferentes níveis de diretórios ✅
 
  # Tarefas
- - carrossel grande no inicio do index
+ - carrossel grande no inicio do index ✅
  - listagem de alguns livros (ultimos lançamentos, bestselers, ...)
- - sobre a pisk
- - os fundadores
+ - sobre a pisk✅
+ - os fundadores ✅
  - alguns autores de destaque
- - mais informações sobre a pisk
+ - mais informações sobre a pisk✅
  - livros de algum gênero especifico ou mais de um
 
  - header
- - identificar se está logado ou não e mudar a interface a depender disso
+ - identificar se está logado ou não e mudar a interface a depender disso ✅
  - carrinho de conpras e link para acessar a página da conta do usuário
  - rodapé
 

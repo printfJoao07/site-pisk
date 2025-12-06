@@ -1,219 +1,3 @@
-/* Carrossel inicial */
-.item-carrossel {
-    display: none;
-}
-
-.ativo {
-    display: block;
-}
-
-main {
-    width: 100vw;
-    height: 100vh;
-    margin-bottom: 150px;
-    scroll-snap-type: y mandatory;
-}
-
-main div {
-    scroll-snap-align: start;
-}
-
-
-
-/* Itens do carrossel */
-@keyframes toUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-}
-
-@keyframes toDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-}
-
-@keyframes toLeft {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-}
-
-@keyframes toRight {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
-
-/* item 1 */
-main div div#item-carr-1.ativo {
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 5;
-    background-image: url("../images/index_carrossel/bibliotecas_carroceo1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-main div div#item-carr-1.ativo div.subitem {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: 7;
-    display: flex;
-    margin-top: 60px;
-    padding: 20px;
-    padding-bottom: 50px;
-    background-color: #fff2afd0;
-    border: goldenrod solid 2px;
-}
-
-main div div#item-carr-1.ativo div.subitem h1.title {
-    font-size: 42pt;
-    text-align: center;
-    padding: 10px;
-    margin-left: 30px;
-    margin-top: 90px;
-    margin-bottom: 50px;
-    animation: toLeft 0.5s ease-in-out 1;
-
-}
-
-main div div#item-carr-1.ativo div.subitem div {
-    width: 250px;
-    height: 250px;
-    background-color: rgba(138, 43, 226, 0.350);
-    border: rgb(114, 33, 190, 0.5) solid 2px;
-    border-radius: 50px;
-    padding: 25px;
-    margin-top: 35px;
-    animation: toUp 0.5s ease-in-out 1;
-}
-
-main div div#item-carr-1.ativo div.subitem div img {
-    width: 200px;
-    height: 200px;
-    animation: toUp 0.7s ease-in-out 1;
-}
-
-
-/* Resolução para telas pequenas */
-@media screen and (max-width: 576px) {
-
-    /* Item 1 do carrossel */
-    main div div#item-carr-1.ativo div.subitem {
-        display: grid !important;
-        place-items: center;
-        padding-bottom: 20px;
-    }
-
-    main div div#item-carr-1.ativo div.subitem h1.title {
-        margin-left: 0;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    
-}
-
-
-/* Resolucão para telas médias */
-@media screen and (max-width: 768px) {
-
-    /* Item 1 do carrossel */
-    main div div#item-carr-1.ativo div.subitem {
-        margin-left: 0;
-    }
-
-    main div div#item-carr-1.ativo div.subitem h1.title {
-        margin-top: 50px;
-    }
-    
-}
-
-
-
-
-/* item 2 */
-main div div#item-carr-2.ativo div.subitem {
-    background-color: blueviolet;
-    padding: 100px;
-    padding-top: 150px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 5;
-    height: 100vh;
-}
-
-main div div#item-carr-2.ativo div.subitem div {
-    display: grid;
-    place-items: left;
-    position: relative;
-}
-
-main div div#item-carr-2.ativo div.subitem div h1.title {
-    font-size: 42pt;
-    height: 25%;
-}
-
-main div div#item-carr-2.ativo div.subitem div h1.title span {
-    color: goldenrod;
-}
-
-main div div#item-carr-2.ativo div.subitem div p {
-    font-size: xx-large;
-}
-
-main div div#item-carr-2.ativo div.subitem img {
-    height: 350px;
-    width: auto;
-    align-items: center;
-    position: relative;
-}
-
-
-
-
-
-main div button.btn {
-    position: absolute;
-    top: 45%;
-    border-radius: 50%;
-
-    /* background-color: rgba(128, 128, 128, 0.767); */
-    font-size: 32pt;
-    color: white;
-
-    display: block;
-    z-index: 7;
-
-    width: 50px;
-    height: 50px;
-
-    justify-content: center;
-    align-items: center;
-}
-
-main div button.btn:hover {
-    color: blueviolet;
-}
-
-#voltar {
-    left: 12px;
-}
-
-#proximo {
-    right: 20px;
-}
-
-
 /* Lista de livros */
 div.lista {
     margin-top: 20px;
@@ -230,7 +14,7 @@ div.lista h3 a:hover {
     transition: all 350ms;
 }
 
-div.list858a div.row {
+div.lista div.row {
     width: 100%;
 }
 
@@ -301,30 +85,87 @@ div.anuncio-container div.anuncio {
     height: 550px;
     margin: 25px 50px;
     margin-bottom: 0;
+    padding: 20px;
     background-color: blueviolet;
-    border: rgb(114, 33, 190) solid 2px;
+    border: rgb(var(--lite-violet)) solid 2px;
     border-radius: 15px;
-    transition: all 1s;
+    position: relative;
+    display: grid;
+    place-items: center;
 }
 
-div.anuncio-container div.anuncio:hover {
-    min-width: 320px;
-    max-width: 570px;
-    transition: all 1s;
+div.anuncio-container div.anuncio div {
+    display: flex;
+}
+
+div.anuncio-container div.anuncio div img {
+    width: 60px;
+    height: 60px;
+    position: static;
+}
+
+div.anuncio-container div.anuncio div h1 {
+    color: #fff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+div.anuncio-container div.anuncio p {
+    margin-bottom: 350px;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.anuncio-container div.anuncio img {
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: auto;
 }
 
 
 /* Informações sobre a Pisk */
 section.info {
-    width: 100vw;
-    height: 85vh;
-}
-section.info div.info {
-    margin: 30px;
-    background-color: #fff2afe0;
+    margin: 0 auto;
+    width: 95vw;
+    padding: 0;
+    background-color: rgba(var(--bege, 0.8));
     border: goldenrod solid 2px;
     border-radius: 15px;
+}
+section.info div.info {
+    margin: 0;
+    padding: 30px;
     height: 100%;
+    width: 100%;    
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section.info div.info div p {
+    font-size: larger;
+    text-indent: 20px;
+}
+
+section.info div.info img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    section.info div.info {
+        display: grid;
+        padding: 10px;
+    }
+
+    section.info div.info img {
+        margin: 10px auto;
+    }
+    
 }
 
 
@@ -342,7 +183,7 @@ section.fundadores div {
 section.fundadores div img.fundador {
     width: 200px;
     height: 200px;
-    border: rgb(88, 0, 88) groove 5px;
+    border: rgb(var(--dark-violet)) groove 5px;
     border-radius: 50px;
 }
 

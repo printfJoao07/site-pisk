@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css.map">
     <link rel="stylesheet" type="text/css" href="css/style_pisk.css">
     <link rel="stylesheet" type="text/css" href="css/index_style.css">
+    <link rel="stylesheet" type="text/css" href="css/carrossel.css">
+    <link rel="stylesheet" type="text/css" href="css/scroll_behavior.css">
 
 </head>
 <body>
@@ -50,7 +52,24 @@
             </div>
 
             <div id="item-carr-3" class="item-carrossel">
-                <img src="images/logo_pisk.png" alt="Biblioteca">
+                <div class="subitem">
+                    <h1 class="title">P<span>í</span>ncel</h1>
+                    <p class="long-text">O que define sua obra não são as ferramentas, mas sim as suas ideias</p>
+                </div>
+            </div>
+
+            <div id="item-carr-4" class="item-carrossel">
+                <div class="subitem">
+                    <h1 class="title">Lapí<span>s</span></h1>
+                    <p class="long-text">Até o mais simples tem sua complexidade oculta</p>
+                </div>
+            </div>
+
+            <div id="item-carr-5" class="item-carrossel">
+                <div class="subitem">
+                    <h1 class="title">Noteboo<span>k</span></h1>
+                    <p class="long-text">Avançando no usu das ferramentas junto com a tecnologia</p>
+                </div>
             </div>
 
             <button class="btn " id="voltar"><span>←</span></button>
@@ -170,6 +189,14 @@
         <!-- Pequeno anúncio sobre a Pisk -->
         <div class="col-xl-4 col-lg-12 anuncio-container">
             <div class="anuncio">
+                <div>
+                    <img src="images/logo_pisk.png" alt="Logo da Pisk">
+                    <h1 class="title">Pisk</h1>
+                </div>
+
+                <p class="long-text">Embarque no mundo da leitura com a gente!</p>
+
+                <img src="images/mulher_com_livro.png" alt="Anúncio">
                 
             </div>
         </div>
@@ -180,6 +207,16 @@
     <!-- Informações iniciais sobre a Pisk -->
     <section class="info">
         <div class="info">
+            <div>
+                <h1 class="title">Sobre nós</h1>
+                <h3 class="text">Afinal, o que é a Pisk? 🤨</h3>
+                <p class="long-text">Somos uma editora, ainda recém fundada, mas com grandes objetivos 😁</p>
+                <p class="long-text">Nossa principal missão é promover a cultura brasileira atravéz de livros que fujam do padrão conhecido e superem espectativas e esteriótipos 😯</p>
+                <p class="long-text">Em primeiro lugar, queremos nos estabilizar no mercado, para sermos uma das principais fornecedoras de livros do país, para que você possa achar com a gente um livro que queira ler a qualquer momento 😉</p>
+                <p class="long-text">Além disso, queremos ser uma grande organizadora de eventos literários e ainda editar bons livros, como uma verdadeira referência no mercado 🤩</p>
+            </div>
+
+            <img src="images/grupo_de_trabalho.jpg" alt="">
 
         </div>
     </section>
@@ -209,10 +246,9 @@
     </section>
 
     <br><br><br>
-
     <!-- Alguns autores de destaque da Pisk -->
     <section class="row autores">
-        <h2 class="title">Alguns de nossos autores de destaque</h2>
+        <h2 class="ps-5 title">Alguns de nossos autores de destaque</h2>
 
         <div class="col-12 col-sm-6 col-lg-3">
             <img src="images/login_icons/user_icon1.png" alt="" class="autor">
@@ -248,13 +284,25 @@
             <p class="text"></p>
         </div>        
     </section>
+
+    <br><br><br>
     
     <!-- Mais algumas informações sobre a Pisk -->
     <section class="info">
         <div class="info">
+            <img src="images/pena_tinteiro.jpg" alt="">
+
+            <div>
+                <h1 class="title">Competições literárias</h1>
+                <p class="long-text">Nós da Pisk pretendemos elaborar futuras competições literárias, com direito a premios 😁</p>
+                <p class="long-text">Nossa primeira competição está sendo planejada para outubro de 2026. Nela teremos diversas modalidades, como poesias, romances e até mesmo musicas, para da um ritimo no evento 🤭</p>
+                <p class="long-text">Então já é bom ir se preparando, fique de olho nas próximas informações, nos vemos em outubro de 2026 e que vença o póximo Machado de Assis 😼</p>
+            </div>
 
         </div>
     </section>
+
+    <br><br><br>
 
     <!-- Livros de algun(s) gênero(s) específico(s) -->
     <section class="row">
@@ -368,6 +416,15 @@
         <!-- Pequeno anúncio sobre a Pisk -->
         <div class="col-xl-4 col-lg-12 anuncio-container">
             <div class="anuncio">
+                <div>
+                    <img src="images/logo_pisk.png" alt="Logo da Pisk">
+                    <h1 class="title">Pisk</h1>
+
+                </div>
+
+                <p class="long-text">Preparesse sua pena e tinteiro para outubro de 2026</p>
+
+                <img src="images/livro_aberto.jpg" alt="Anúncio" style="border-top-left-radius: 30px; border-top-right-radius: 30px;">
                 
             </div>
         </div>
@@ -379,5 +436,6 @@
     <script src="js/carrossel.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/scroll_behavior.js"></script>
 </body>
 </html>

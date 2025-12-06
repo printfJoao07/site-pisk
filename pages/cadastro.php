@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="login-body">
-                <form action="/pisk/database/funcoes_usuario.php" method="POST" novalidate>
+                <form action="../database/funcoes_usuario.php" method="POST" novalidate>
                     <div class="mb-3">
                         <label for="username" class="form-label">Nome de Usuário</label>
                         <div class="input-group mb-3">

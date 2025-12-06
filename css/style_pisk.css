@@ -1,9 +1,22 @@
-
 /*
     Importação das fonts usadas no site
     Padrões de texto usados no site: Títulos, textos breves e textos longos
 */
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --lite-violet: 114, 33, 190;
+    --dark-violet: 88, 0, 88;
+    --bege: 255, 242, 175;
+    --black-header: 33, 37, 41;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .title {
     font-family: "Caprasimo", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,6 +39,81 @@ nav.navbar {
     top: 0;
     left: 0;
 }
+
+.inativo {
+    display: none;
+}
+
+.ativo {
+    display: block;
+}
+
+/* Animações */
+@keyframes toUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes toDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes toLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes toRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+
+
+/* Estilo header */
+#navbarSupportedContent {
+    justify-content: space-between;
+}
+
+#logado {
+    display: flex;
+    margin-left: 10px;
+    height: 60px;
+    width: auto;
+}
+
+#logado img {
+    height: 100%;
+    width: auto;
+}
+
+#menu {
+    background-color: rgb(var(--black-header));
+    position:absolute;
+    top: 80px;
+    width: 150px;
+    height: auto;
+    right: 0;
+    padding: 10px;
+    border-radius: 10px;
+    animation: toDown 0.1s ease-in-out 1;
+}
+
+#menu a {
+    color: red;
+    text-decoration: none;
+}
+
+
 
 /* Testes */
 

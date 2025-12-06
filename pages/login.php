@@ -106,10 +106,10 @@
     </style>
 </head>
 <body>
+
+    <?php include '../components/mensagem.php'; ?>
+    
     <div class="container">
-
-        <?php include '../components/mensagem.php'; ?>
-
         <div class="login-box">
             <div class="login-header">
                 <img src="../images/logo_pisk.png" alt="Logo PISK Editora" class="header-logo" />
@@ -119,7 +119,7 @@
                 </div>
             </div>
             <div class="login-body">
-                <form action="#" method="POST" novalidate>
+                <form action="../database/funcoes_usuario.php" method="POST" novalidate>
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail</label>
                         <div class="input-group mb-3">
@@ -135,7 +135,7 @@
                             <span class="input-group-text input-icon">
                                 <img src="../images/login_icons/password_icon.png" alt="Ícone de Senha" style="width: 2rem; height: 2rem;" />
                             </span>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required />
+                            <input type="password" class="form-control" id="senha" name="senha" placeholder="••••••••" required />
                         </div>
                     </div>
                     <div class="mb-3 form-check">

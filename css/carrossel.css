@@ -1,0 +1,380 @@
+/* Carrossel inicial */
+.item-carrossel {
+    display: none;
+}
+
+.ativo {
+    display: block;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 150px;
+    scroll-snap-type: y mandatory;
+}
+
+main div {
+    scroll-snap-align: start;
+}
+
+/* Butões do carrossel */
+main div button.btn {
+    position: absolute;
+    top: 45%;
+    border-radius: 50%;
+
+    /* background-color: rgba(128, 128, 128, 0.767); */
+    font-size: 32pt;
+    color: white;
+
+    display: block;
+    z-index: 7;
+
+    width: 50px;
+    height: 50px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+main div button.btn:hover {
+    color: blueviolet;
+}
+
+#voltar {
+    left: 12px;
+}
+
+#proximo {
+    right: 20px;
+}
+
+
+
+/* item 1 */
+main div div#item-carr-1.ativo {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    background-image: url("../images/index_carrossel/bibliotecas_carroceo1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+main div div#item-carr-1.ativo div.subitem {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 7;
+    display: flex;
+    margin-top: 60px;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: rgba(var(--bege), 0.8);
+    border: goldenrod solid 2px;
+}
+
+main div div#item-carr-1.ativo div.subitem h1.title {
+    font-size: 42pt;
+    text-align: center;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    animation: toLeft 0.5s ease-in-out 1;
+
+}
+
+main div div#item-carr-1.ativo div.subitem div {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(138, 43, 226, 0.350);
+    border: rgb(var(--lite-violet), 0.5) solid 2px;
+    border-radius: 50px;
+    padding: 25px;
+    margin-top: 35px;
+    animation: toUp 0.5s ease-in-out 1;
+}
+
+main div div#item-carr-1.ativo div.subitem div img {
+    width: 200px;
+    height: 200px;
+    animation: toUp 0.7s ease-in-out 1;
+}
+
+
+/* Resolução para telas pequenas */
+@media screen and (max-width: 576px) {
+
+    /* Item 1 do carrossel */
+    main div div#item-carr-1.ativo div.subitem {
+        display: grid !important;
+        place-items: center;
+        padding-bottom: 20px;
+    }
+
+    main div div#item-carr-1.ativo div.subitem h1.title {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+/* Resolucão para telas médias */
+@media screen and (max-width: 768px) {
+
+    /* Item 1 do carrossel */
+    main div div#item-carr-1.ativo div.subitem {
+        margin-left: 0;
+    }
+
+    main div div#item-carr-1.ativo div.subitem h1.title {
+        margin-top: 50px;
+    }
+    
+}
+
+
+
+
+/* item 2 */
+main div div#item-carr-2.ativo div.subitem {
+    background-image: url("../images/index_carrossel/fundo_madeira.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    padding-top: 150px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    height: 100vh;
+}
+
+main div div#item-carr-2.ativo div.subitem div {
+    display: grid;
+    place-items: left;
+    position: relative;
+    background-color: blueviolet;
+    opacity: 0.85;
+    border: rgb(var(--dark-violet)) double 20px;
+    border-radius: 20px;
+    padding: 20px;
+    animation: toRight 0.5s ease-in-out 1;
+}
+
+main div div#item-carr-2.ativo div.subitem div h1.title {
+    font-size: 42pt;
+    height: 25%;
+}
+
+main div div#item-carr-2.ativo div.subitem div h1.title span {
+    color: goldenrod;
+}
+
+main div div#item-carr-2.ativo div.subitem div p {
+    font-size: xx-large;
+}
+
+main div div#item-carr-2.ativo div.subitem img {
+    height: 350px;
+    width: auto;
+    align-items: center;
+    position: relative;
+    border: rgba(var(--dark-violet)) solid 5px;
+    border-radius: 15px;
+    animation: toLeft 0.5s ease-in-out 1;
+}
+
+/* Dispositivos pequenos */
+@media screen and (max-width: 700px) {
+    main div div#item-carr-2.ativo div.subitem {
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        padding: 35px;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    main div div#item-carr-2.ativo div.subitem div {
+        max-width: 500px;
+        min-width: 250px;
+        animation: toDown 0.5s ease-in-out 1;
+    }
+
+    main div div#item-carr-2.ativo div.subitem img {
+        max-width: 400px;
+        min-width: 250px;
+        height: auto;
+        animation: toUp 0.5s ease-in-out 1;
+    }
+    
+}
+
+/* Dispositivos médios */
+@media screen and (max-width: 1037px) {
+    main div div#item-carr-2.ativo div.subitem {
+        padding: 70px;
+        padding-top: 100px;
+        width: 100%;
+    }
+
+    main div div#item-carr-2.ativo div.subitem div {
+        max-height: max-content;
+    }
+
+    main div div#item-carr-2.ativo div.subitem img {
+        max-width: 400px;
+        min-width: 300px;
+        width: 100%;        
+        height: auto;
+    }
+}
+
+
+
+/* Item 3 */
+main div div#item-carr-3.ativo {
+    background-image: url("../images/index_carrossel/fundo_pintura.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    padding-top: 150px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    height: 100vh;
+}
+
+main div div#item-carr-3.ativo div.subitem {
+    background-color: rgb(var(--bege), 0.8);
+    border: goldenrod solid 2px;
+    border-radius: 20px;
+    padding: 20px;
+    animation: toUp 0.7s ease-in-out 1;
+}
+
+main div div#item-carr-3.ativo div.subitem h1 {
+    font-size: 42pt;
+    text-align: center;
+}
+
+main div div#item-carr-3.ativo div.subitem h1 span {
+    color: rgb(var(--dark-violet));
+}
+
+main div div#item-carr-3.ativo div.subitem p {
+    font-size: xx-large;
+}
+
+
+
+/* Item 4 */
+main div div#item-carr-4.ativo {
+    background-image: url("../images/index_carrossel/fundo_lapis.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    padding-top: 150px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    height: 100vh;
+}
+
+main div div#item-carr-4.ativo div.subitem {
+    background-color: rgba(var(--dark-violet), 0.6);
+    border: rgb(var(--dark-violet));
+    border-radius: 20px;
+    padding: 20px;
+    animation: toDown 0.7s ease-in-out 1;
+    max-width: 500px;
+}
+
+main div div#item-carr-4.ativo div.subitem h1 {
+    font-size: 42pt;
+    text-align: right;
+}
+
+main div div#item-carr-4.ativo div.subitem h1 span {
+    color: goldenrod;
+}
+
+main div div#item-carr-4.ativo div.subitem p {
+    font-size: xx-large;
+}
+
+
+/* Item 5 */
+main div div#item-carr-5.ativo {
+    background-image: url("../images/index_carrossel/fundo_notebook.webp");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    padding-top: 150px;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    height: 100vh;
+}
+
+main div div#item-carr-5.ativo div.subitem {
+    background-color: rgb(var(--bege), 0.8);
+    border: goldenrod solid 2px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    animation: toLeft 0.5s ease-in-out 1;
+    text-align: center;
+}
+
+main div div#item-carr-5.ativo div.subitem h1 {
+    font-size: 42pt;
+}
+
+main div div#item-carr-5.ativo div.subitem h1 span {
+    color: rgb(var(--dark-violet));
+}
+
+main div div#item-carr-5.ativo div.subitem p {
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 512px) {
+    main div div#item-carr-5.ativo {
+        padding: 5px;
+    }
+
+    main div div#item-carr-5.ativo div.subitem {
+        min-width: 250px;
+    }
+    
+}

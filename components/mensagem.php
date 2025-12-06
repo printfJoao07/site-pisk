@@ -10,7 +10,8 @@
          z-index: 5;
          justify-content: center;
          position: absolute;
-         top: 30px;
+         top: 20%;
+         font-size: 12pt;
 
       }
    </style>

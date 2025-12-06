@@ -19,13 +19,14 @@
         $funcao = isset($_POST['funcao'])? mysqli_real_escape_string($conexao, trim($_POST['funcao'])) : null;
 
         if ($senha == $confirmaSenha){
-            $senha = mysqli_real_escape_string($conexao, password_hash(trim($_POST['senha'])));
+
+            $senha = password_hash($senha, PASSWORD_DEFAULT);
+
             if (cadastraUsuario($conexao, $nome, $email, $senha, $funcao)){
                 $_SESSION['mensagem'] = "Conta criada com sucesso!";
-                header("Location: http://localhost/site-pisk/pages/minha_estante.php");
+                header("Location: ../pages/minha_estante.php");
                 exit;
-                return null;
-
+                
             }
 
         }else{
@@ -33,7 +34,7 @@
             
         }
         
-        header("Location: http://localhost/site-pisk/pages/cadastro.php");
+        header("Location: ../pages/cadastro.php");
         exit;
 
     }
@@ -56,24 +57,24 @@
                 $_SESSION['mensagem'] = "Login realizado com sucesso!";
                 
                 if ($usuario['funcao'] == "admin" || $usuario['funcao'] == "editor" || $usuario['funcao'] == "revisor" || $usuario['funcao'] == "designer"){
-                    header("Location: http://localhost/site-pisk/pages/funcionarios/inicio.php");
+                    header("Location: ../pages/funcionarios/inicio.php");
                     exit;
 
                 }
 
-                header("Location: http://localhost/site-pisk/pages/minha_estante.php");
+                header("Location: ../pages/minha_estante.php");
                 exit;
 
             }else{
                 $_SESSION['mensagem'] = "Senha digitada incorreta!";
-                header("Location: http://localhost/site-pisk/pages/login.php");
+                header("Location: ../pages/login.php");
                 exit;
 
             }
         }
         
         $_SESSION['mensagem'] = "Usuário não encontrado!";
-        header("Location: http://localhost/site-pisk/pages/login.php");
+        header("Location: ../pages/login.php");
         exit;
         
     }

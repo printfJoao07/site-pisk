@@ -1,0 +1,34 @@
+/* Estilos para o comportamento de scroll */
+
+/* Classe para indicar que o script de scroll está ativo */
+body.scroll-behavior-active {
+    scroll-behavior: smooth;
+}
+
+/* Transição suave para o carrossel quando estiver sendo ocultado/mostrado */
+#carrossel {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Classe para indicar que estamos no meio de uma animação de scroll */
+body.scrolling-active {
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Estilo para indicar visualmente quando o carrossel está "ativo" ou não */
+#carrossel.scroll-inactive {
+    opacity: 0.8;
+}
+
+/* Media query para dispositivos móveis - desativa o comportamento especial em telas pequenas */
+@media (max-width: 768px) {
+    body.scroll-behavior-active {
+        scroll-behavior: auto;
+    }
+    
+    /* Em dispositivos móveis, o comportamento de scroll especial é desativado */
+    #carrossel {
+        transition: none;
+    }
+}
