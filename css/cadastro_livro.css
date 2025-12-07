@@ -1,3 +1,32 @@
 #forms {
-    
+    background-color: rgb(var(--dark-bege));
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    border: rgb(var(--dark-bege)) groove 10px;
+}
+
+#forms form {
+    max-width: 500px;
+    min-width: 250px;
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+}
+
+#forms form div label {
+    font-size: larger;
+}
+
+#forms form button {
+    width: 100px;
+    font-weight: bold;
+    background-color: gold;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#forms form button:hover {
+    color: rgb(var(--lite-violet))
 }

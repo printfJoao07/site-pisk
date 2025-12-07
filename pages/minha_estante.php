@@ -24,7 +24,8 @@
         <?php require "../components/header.php"; ?>
 
     
-
+        <?php require_once "../components/footer.php"; ?>
+        
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

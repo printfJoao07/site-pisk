@@ -39,8 +39,12 @@
  - página para listar os autores que trabalham ou colaboram com a pisk
  - sistema para pesquisar por autores (nome, gênero textual em que escreve, ...)
 
+ - Página seja um autor
  - página descrevendo como se tornar um autor da pisk e fornecendo nossos serviços, tanto pagos como gratuitos
  - formulário para pessoa adicionar os arquivos da sua obra e mais algumas informações 
+ - istruções de como se tornar um autor
+ - contato para serviços em grandes escalas
+ - Bem bonito e decorado
 
 
  - página dos funcionários

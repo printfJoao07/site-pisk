@@ -124,7 +124,7 @@
                             <span class="input-group-text input-icon">
                                 <img src="../images/login_icons/user_icon2.png" alt="Ícone de Usuário" style="width: 2rem; height: 2rem;" />
                             </span>
-                            <input type="text" class="form-control" id="username" name="username" placeholder="seu nome" required />
+                            <input type="text" class="form-control" id="username" name="username" placeholder="seu nome" maxlength="120" required />
                         </div>
                     </div>
                     <div class="mb-3">
@@ -133,7 +133,7 @@
                             <span class="input-group-text input-icon">
                                 <img src="../images/login_icons/email_icon1.jpg" alt="Ícone de E-mail" style="width: 2rem; height: 2rem;" />
                             </span>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" required />
+                            <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" maxlength="120" required />
                         </div>
                     </div>
                     <div class="mb-3">
@@ -142,7 +142,7 @@
                             <span class="input-group-text input-icon">
                                 <img src="../images/login_icons/password_icon.png" alt="Ícone de Senha" style="width: 2rem; height: 2rem;" />
                             </span>
-                            <input type="password" class="form-control" id="senha" name="senha" placeholder="••••••••" required />
+                            <input type="password" class="form-control" id="senha" name="senha" placeholder="••••••••" maxlength="120" required />
                         </div>
                     </div>
                     <div class="mb-3">

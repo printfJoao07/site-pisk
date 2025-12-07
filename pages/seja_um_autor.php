@@ -15,8 +15,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style_pisk.css">
+    <link rel="stylesheet" type="text/css" href="../css/cadastro_livro.css">
 
 </head>
 <body>
@@ -29,20 +30,37 @@
         ?>
 
             <h1 class="text text-center">Seja um de nossos autores hoje mesmo!</h1>
-            <h3 class="long-text text-center"><a href="#info" class="text-decoration-none text-center">Mais informações abaixo</a></h3>
+            <h3 class="long-text text-center"><a href="#info" class="text-decoration-none text-dark">Mais informações abaixo</a></h3>
             
+            <br>
+
             <section id="forms">
                 <form action="../database/funcoes_livro.php" method="POST" enctype="multipart/form-data">
                     <h2 class="text text-center">Cadastre o seu livro aqui</h2>
 
-                    <label for="titulo" class="long-text">Título</label>
-                    <input type="text" name="titulo" id="titulo" placeholder="Digite o título do seu livro" class="form-control" required />
+                    <br>
+                    
+                    <div>
+                        <label for="titulo" class="long-text">Título</label>
+                        <input type="text" name="titulo" id="titulo" placeholder="Digite o título do seu livro" maxlength="120" class="form-control" required />
+                    </div>
 
-                    <label for="descricao" class="long-text">Descrição</label>
-                    <input type="text" name="descricao" id="descricao" placeholder="Digite a descrição do seu livro" class="form-control" required height="60px" />
+                    <div>
+                        <label for="autor" class="long-text">Autor</label>
+                        <input type="text" name="autor" id="autor" placeholder="Digite o título do seu livro" maxlength="120" class="form-control" required />
+                    </div>
 
-                    <label for="arquivo" class="long-text">Adicione o arquivo com o conteúdo do seu livro aqui</label>
-                    <input type="file" name="arquivo" id="arquivo" class="form-control" required />
+                    <div>
+                        <label for="descricao" class="long-text">Descrição</label>
+                        <input type="text" name="descricao" id="descricao" placeholder="Digite a descrição do seu livro" maxlength="255" class="form-control" required />
+                    </div>
+
+                    <div>
+                        <label for="arquivo" class="long-text">Adicione o arquivo com o conteúdo do seu livro aqui (.docx ou .pdf)</label>
+                        <input type="file" name="arquivo" id="arquivo" class="form-control" required />
+                    </div>
+
+                    <button type="submit" name="cria_livro" class="btn text">Enviar</button>
 
                 </form>
             </section>
@@ -61,7 +79,7 @@
 
 
 
-    
+    <?php require_once "../components/footer.php"; ?>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

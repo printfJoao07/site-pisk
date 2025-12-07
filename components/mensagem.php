@@ -7,11 +7,12 @@
 ?>
    <style>
       div.alert {
-         z-index: 5;
+         z-index: 7;
          justify-content: center;
          position: absolute;
          top: 20%;
          font-size: 12pt;
+         max-width: 500px;
 
       }
    </style>

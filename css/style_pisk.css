@@ -8,6 +8,7 @@
     --lite-violet: 114, 33, 190;
     --dark-violet: 88, 0, 88;
     --bege: 255, 242, 175;
+    --dark-bege: 230, 217, 154;
     --black-header: 33, 37, 41;
     
 }
@@ -108,7 +109,7 @@ nav.navbar {
     height: auto;
     right: 0;
     padding: 10px;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
     animation: toDown 0.1s ease-in-out 1;
 }
 
