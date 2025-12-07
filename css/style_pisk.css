@@ -34,6 +34,10 @@ html, body {
     overflow-x: hidden;
 }
 
+body{
+    padding-top: 120px;
+}
+
 nav.navbar {
     z-index: 4;
     top: 0;

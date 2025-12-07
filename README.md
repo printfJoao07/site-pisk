@@ -20,9 +20,12 @@
  - carrinho de conpras e link para acessar a página da conta do usuário
  - rodapé
 
- - página minha estante *
+ - página minha estante/página do usuário *
  - identificar se esta logado, livros na estante e mensagem para cada situação
+ - vai funcionar como a página de uma conta, listar os livros salvos pelo usuário e os que ele escreveu
+ - página do usuário contendo suas informações como livros publicados
 
+ - Página descobrir/catálogo
  - pagina para busca por livros
  - sistema de busca de livros
  - sistema de filtro de livros
@@ -39,8 +42,6 @@
  - página descrevendo como se tornar um autor da pisk e fornecendo nossos serviços, tanto pagos como gratuitos
  - formulário para pessoa adicionar os arquivos da sua obra e mais algumas informações 
 
- - página do usuário contendo suas informações como livros publicados
- - (*) está ligado a página do usuário
 
  - página dos funcionários
  - cada pater dos funcinários é uma seção que pode estar desabilitada a depender do cargo do funcionário
