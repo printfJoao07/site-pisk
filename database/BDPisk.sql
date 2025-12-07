@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 25/11/2025 às 11:09
+-- Tempo de geração: 07/12/2025 às 21:51
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `BDPisk`
 --
+CREATE DATABASE IF NOT EXISTS `BDPisk` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `BDPisk`;
 
 -- --------------------------------------------------------
 
@@ -31,10 +33,21 @@ CREATE TABLE `livros` (
   `id` int(11) NOT NULL,
   `id_autor` int(11) NOT NULL,
   `titulo` varchar(120) NOT NULL,
+  `autor` varchar(120) NOT NULL,
   `descricao` varchar(255) NOT NULL,
   `preco` int(11) DEFAULT NULL,
-  `status` varchar(20) NOT NULL
+  `estado` varchar(20) NOT NULL,
+  `path_livro` varchar(120) NOT NULL,
+  `path_capa` varchar(120) DEFAULT NULL,
+  `data_lancamento` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `livros`
+--
+
+INSERT INTO `livros` (`id`, `id_autor`, `titulo`, `autor`, `descricao`, `preco`, `estado`, `path_livro`, `path_capa`, `data_lancamento`) VALUES
+(1, 4, '', 'eu', '', NULL, 'e_edicao', '../archives/livros/6935e2c74e5f9.pdf', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -51,6 +64,14 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Despejando dados para a tabela `usuario`
+--
+
+INSERT INTO `usuario` (`id`, `nome`, `email`, `senha`, `funcao`) VALUES
+(1, 'admin', 'admin@piskeditorial.com.br', '$2y$10$aVjl/Iz4eqrcLyku4wGtyeDaWbkLZw3LV8XSmOrJ0WZm6a.F3OQOi', 'admin'),
+(4, 'joao', 'joaogabrielmendoncasalles@gmail.com', '$2y$10$KkTfDowSTNLecVg149CDFOYsBlt9m209O7m2TuiUsRjtkKUEpiVvq', NULL);
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -59,7 +80,7 @@ CREATE TABLE `usuario` (
 --
 ALTER TABLE `livros`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `id_autor` (`id_autor`);
+  ADD KEY `fk_autor` (`id_autor`);
 
 --
 -- Índices de tabela `usuario`
@@ -75,23 +96,23 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restrições para tabelas despejadas
 --
 
 --
--- Restrições para tabelas `usuario`
+-- Restrições para tabelas `livros`
 --
-ALTER TABLE `usuario`
-  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`id`) REFERENCES `livros` (`id_autor`);
+ALTER TABLE `livros`
+  ADD CONSTRAINT `fk_autor` FOREIGN KEY (`id_autor`) REFERENCES `usuario` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
