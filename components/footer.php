@@ -5,6 +5,7 @@
 ?>
 
 <style>
+
     footer {
         background-color: #212529;
     }
@@ -36,7 +37,7 @@
     
 </style>
 
-<div class="container-flex w-100 mx-0 mt-5">
+<div class="container-flex w-100 mx-0 mt-5" id="footer">
 <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 ps-5 pe-1 border-top align-bottom " > 
     <div class="logo col-12 col-lg-3 mb-3"> 
         <a href="/site-pisk/" class="d-flex align-items-center mb-3  text-decoration-none " aria-label="Pisk"> 

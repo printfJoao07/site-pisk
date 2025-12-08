@@ -1,0 +1,31 @@
+#usuario {
+    display: grid;
+    gap: 20px;
+    place-items: center;
+}
+
+#usuario img {
+    height: 100px;
+    width: 100px;
+
+}
+
+#livros-salvos {
+    padding: 20px;
+    overflow-x: auto;
+}
+
+#livros-salvos div div {
+    display: grid;
+    gap: 10px;
+    place-items: center;
+}
+
+#livros-salvos div div img {
+    height: 200px;
+    width: 150px;
+}
+
+#livros-salvos div div h5 {
+    font-size: large;
+}

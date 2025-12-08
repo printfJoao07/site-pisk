@@ -24,10 +24,14 @@
 
         <?php 
         
-        require "../components/header.php"; 
+        require_once "../components/header.php"; 
+
+        require_once "../components/mensagem.php";
         
         if (isset($_SESSION['usuario_id'])){
         ?>
+
+        <br><br><br><br><br>
 
             <h1 class="text text-center">Seja um de nossos autores hoje mesmo!</h1>
             <h3 class="long-text text-center"><a href="#info" class="text-decoration-none text-dark">Mais informações abaixo</a></h3>
