@@ -13,8 +13,6 @@
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css.map">
     <link rel="stylesheet" type="text/css" href="css/style_pisk.css">
@@ -70,7 +68,7 @@
             <div id="item-carr-5" class="item-carrossel">
                 <div class="subitem">
                     <h1 class="title">Noteboo<span>k</span></h1>
-                    <p class="long-text">Avançando no usu das ferramentas junto com a tecnologia</p>
+                    <p class="long-text">Avançando no uso das ferramentas junto com a tecnologia</p>
                 </div>
             </div>
 
@@ -119,7 +117,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 ">
                         <div class="">
-                            <img src="images/livros/poeira_em_auto_mar.png" alt="Poeira em Auto Mar">
+                            <img src="images/livros/poder_pausa.png" alt="Poeira em Auto Mar">
 
                             <div>
                                 <p class="text">Isso é um teste</p>
@@ -131,7 +129,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 ">
                         <div class="">
-                            <img src="images/livros/apice.png" alt="Ápice">
+                            <img src="images/livros/Cronista_Vazio.png" alt="Ápice">
 
                             <div>
                                 <p class="text">Isso é um teste</p>
@@ -177,7 +175,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 ">
                         <div class="">
-                            <img src="images/livros/apice.png" alt="Ápice">
+                            <img src="images/livros/Ultimo_Valsar.png" alt="O Último Valsar">
 
                         </div>
                     </div>
@@ -253,36 +251,36 @@
         <h2 class="ps-5 title">Alguns de nossos autores de destaque</h2>
 
         <div class="col-12 col-sm-6 col-lg-3">
-            <img src="images/login_icons/user_icon1.png" alt="" class="autor">
+            <img src="images/fundadores/joao_gabriel.png" alt="" class="autor">
             <p class="text"></p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-            <img src="images/login_icons/user_icon2.png" alt="" class="autor">
+            <img src="images/fundadores/joao_eduardo.png" alt="" class="autor">
             <p class="text"></p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-            <img src="images/login_icons/user_icon3.png" alt="" class="autor">
+            <img src="images/autores/icaro_salles.jpg" alt="" class="autor">
             <p class="text"></p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-            <img src="images/login_icons/user_icon1.png" alt="" class="autor">
+            <img src="images/autores/isabela_conti.jpg" alt="" class="autor">
             <p class="text"></p>
         </div>        
 
         <div class="col-12 col-sm-6 col-lg-3">
-            <img src="images/login_icons/user_icon2.png" alt="" class="autor">
+            <img src="images/autores/vera_santiago.jpg" alt="" class="autor">
             <p class="text"></p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-            <img src="images/login_icons/user_icon3.png" alt="" class="autor">
+            <img src="images/autores/ronan_blake.jpg" alt="" class="autor">
             <p class="text"></p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-            <img src="images/login_icons/user_icon1.png" alt="" class="autor">
+            <img src="images/autores/elias_varga.jpg" alt="" class="autor">
             <p class="text"></p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-            <img src="images/login_icons/user_icon2.png" alt="" class="autor">
+            <img src="images/autores/arthur_lima.jpg" alt="" class="autor">
             <p class="text"></p>
         </div>        
     </section>
@@ -314,7 +312,7 @@
             <!-- Gênero 1 -->
             <div class="lista">
                 <h3 class="title">
-                    Gênero 1
+                    Ficção
                     <a href="pages/catalogo.php" class="h5 text float-end">veja mais</a>
                 </h3>
 
@@ -346,7 +344,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 ">
                         <div class="">
-                            <img src="images/livros/poeira_em_auto_mar.png" alt="Poeira em Auto Mar">
+                            <img src="images/livros/Ferro_Kepler.png" alt="Poeira em Auto Mar">
 
                             <div>
                                 <p class="text">Isso é um teste</p>
@@ -358,7 +356,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 ">
                         <div class="">
-                            <img src="images/livros/apice.png" alt="Ápice">
+                            <img src="images/livros/Mare_Submersa.jpg" alt="Ápice">
 
                             <div>
                                 <p class="text">Isso é um teste</p>
@@ -378,7 +376,7 @@
             <!-- Gênero 2 -->
             <div class="lista">
                 <h3 class="title">
-                    Gênero 2
+                    Romance
                     <a href="pages/catalogo.php" class="h5 text float-end">veja mais</a>
                 </h3>
 
@@ -386,13 +384,13 @@
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-3  ">
                         <div class="">
-                            <img src="images/livros/apice.png" alt="Ápice">
+                            <img src="images/livros/Ultimo_Valsar.png" alt="O Último Valsar">
 
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 ">
                         <div class="">
-                            <img src="images/livros/dominancia.png" alt="Dominância">
+                            <img src="images/livros/Cartas_Ny.png" alt="Cartas de Nova York">
 
                         </div>
                     </div>
@@ -404,7 +402,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 ">
                         <div class="">
-                            <img src="images/livros/apice.png" alt="Ápice">
+                            <img src="images/livros/bordado_secreto.png" alt="Bordado Secreto">
 
                         </div>
                     </div>

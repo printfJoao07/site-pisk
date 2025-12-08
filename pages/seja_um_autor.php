@@ -9,34 +9,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
-
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <title>Seja Um Autor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/autor.css">
     <link rel="stylesheet" type="text/css" href="../css/style_pisk.css">
     <link rel="stylesheet" type="text/css" href="../css/cadastro_livro.css">
-
+    
+    
 </head>
+
 <body>
-
-        <?php 
+    <?php include "../components/header.php"; ?>
         
-        require_once "../components/header.php"; 
-
-        require_once "../components/mensagem.php";
-        
-        if (isset($_SESSION['usuario_id'])){
-        ?>
-
-        <br><br><br><br><br>
-
-            <h1 class="text text-center">Seja um de nossos autores hoje mesmo!</h1>
-            <h3 class="long-text text-center"><a href="#info" class="text-decoration-none text-dark">Mais informações abaixo</a></h3>
-            
-            <br>
+    <div class="top-contact">
+        <h1>Quer se tornar um Autor?</h1>
+        <h4 class="mt-3">Fale com nossa equipe editorial:</h4>
+        <a href="mailto:contato@sualivraria.com">atendimento@piskeditora.com.br</a>
+        <p></p>
+        <a href="tel:+5531999999999" style="color: #FFD700; font-weight: bold; font-size: 1.4rem;">(31) 99888-7777</a>       
+    </div>
 
             <section id="forms">
                 <form action="../database/funcoes_livro.php" method="POST" enctype="multipart/form-data">
@@ -69,22 +60,91 @@
                 </form>
             </section>
 
-        <?php
-        } else {
-        ?>
-            <br><br><br><br><br><br><br>
-            <h1 class="text text-center">Ops! Parece que você não esta logado!</h1>
-            <p class="long-text fs-5 text-center"><a href="login.php">Faça login!</a></p>
-            <p class="long-text fs-5 text-center">ou</p>
-            <p class="long-text fs-5 text-center"><a href="cadastro.php">Crie uma conta!</a></p>
+    <div class="container py-5">
 
-        <?php            
-        } ?>
+        <div class="big-info-box text-center">
+            <h2 class="fw-bold mb-3">Como Funciona?</h2>
+            <p class="fs-5">
+                Você envia seu manuscrito, escolhe um plano de publicação e nossa equipe cuida do resto:
+                revisão, capa, página do autor, divulgação e muito mais.
+            </p>
+        </div>
 
+        
 
+        <section class="mb-5">
+            <h3 class="section-title mb-3 text-center">O que você precisa para começar?</h3>
+            <ul class="fs-5 dark-purple text-center list-unstyled">
+                <li>✔ Um manuscrito (mesmo em desenvolvimento)</li>
+                <li>✔ E-mail válido para contato</li>
+                <li>✔ Escolher um dos nossos planos abaixo</li>
+                <li>✔ Estar de acordo com nossos termos editoriais</li>
+            </ul>
+        </section>
+
+        <!-- Planos -->
+        <h3 class="section-title text-center mb-4">Planos de Publicação</h3>
+
+        <div class="row g-4">
+
+            <!-- Plano Gratuito -->
+            <div class="col-md-4">
+                <div class="card card-plan p-3">
+                    <h4 class="text-center dark-purple fw-bold">Plano Gratuito</h4>
+                    <h1 class="text-center fw-bold">R$ 0</h1>
+                    <ul class="mt-3 dark-purple">
+                        <li>Publicação digital no site</li>
+                        <li>Página de autor básica</li>
+                        <li>Divulgação limitada</li>
+                        <li>Suporte por e-mail</li>
+                    </ul>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-yellow">Começar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plano Essencial -->
+            <div class="col-md-4">
+                <div class="card card-plan p-3">
+                    <h4 class="text-center dark-purple fw-bold">Plano Essencial</h4>
+                    <h1 class="text-center fw-bold">R$ 39,99</h1>
+                    <ul class="mt-3 dark-purple">
+                        <li>Publicação digital + física sob demanda</li>
+                        <li>Divulgação nas nossas redes</li>
+                        <li>Capa simples incluída</li>
+                        <li>Relatórios mensais</li>
+                    </ul>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-yellow">Assinar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plano Profissional -->
+            <div class="col-md-4">
+                <div class="card card-plan p-3">
+                    <h4 class="text-center dark-purple fw-bold">Plano Profissional</h4>
+                    <h1 class="text-center fw-bold">R$ 109,90</h1>
+                    <ul class="mt-3 dark-purple">
+                        <li>Capa profissional + revisão completa</li>
+                        <li>Destaque na página inicial</li>
+                        <li>Consultoria editorial mensal</li>
+                        <li>Estatísticas avançadas</li>
+                        <li>Campanha publicitária ampliada</li>
+                    </ul>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-yellow">Assinar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 
     <?php require_once "../components/footer.php"; ?>
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
