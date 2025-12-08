@@ -228,7 +228,7 @@
         <h2 class="title">Fundadores da Pisk</h2>
 
         <div class="col-12 col-sm-6 col-lg-3">
-            <img src="images/fundadores/joao_eduardo.png" alt="João Eduardo" class="fundador">
+            <img src="images/fundadores/joao_eduardo.jpeg" alt="João Eduardo" class="fundador">
             <p class="text">João Eduardo</p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
@@ -240,7 +240,7 @@
             <p class="text">Kauan Bruno</p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
-            <img src="images/fundadores/lucas.png" alt="Lucas" class="fundador">
+            <img src="images/fundadores/lucas.jpeg" alt="Lucas" class="fundador">
             <p class="text">Lucas</p>
         </div>
     </section>

@@ -44,8 +44,8 @@
             <img src="/site-pisk/images/logo_pisk.png" alt="Logo da Pisk" class="img-fluid me-3" style="width: 60px; height: 60px" />
             <h3 class="title">Pisk Editorial</h3>
         </a> 
-        <p class="">© 2025. Todos os direitos reservados</p> 
-        <p class="">Passos/MG</p>
+        <p class="long-text">© 2025. Todos os direitos reservados</p> 
+        <p class="long-text">Passos/MG</p>
     </div> 
     
     <div class="col-12 col-md-4 col-lg-3 mb-3"> 
